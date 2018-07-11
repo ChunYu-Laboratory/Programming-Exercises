@@ -26,13 +26,19 @@ side_output = ' '.join(side_str)
 
 print(side_output)
 
-# 8. 使用畢氏定理判斷三角形類型並輸出
+# 8. 宣告 a、b、c 變數
 
-if side[0] + side[1] <= side[2] :
+a = side[0]
+b = side[1]
+c = side[2]
+
+# 9. 使用畢氏定理判斷三角形類型並輸出
+
+if a + b <= c :
     print('No')
-elif (side[0])**2 + (side[1])**2 < (side[2])**2 :
+elif pow(a,2) + pow(b,2) < pow(c,2) :
     print('Obtuse')
-elif (side[0])**2 + (side[1])**2 == (side[2])**2 :
+elif pow(a,2) + pow(b,2) == pow(c,2) :
     print('Right')
-elif (side[0])**2 + (side[1])**2 > (side[2])**2 :
+elif pow(a,2) + pow(b,2) > pow(c,2) :
     print('Acute')
