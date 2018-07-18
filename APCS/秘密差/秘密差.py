@@ -21,12 +21,8 @@ else :
 
 # 5. 計算奇數位數和 A 與 偶數位數和 B
 
-A = 0
-B = 0
-for i in a :
-    A += i
-for j in b :
-    B += j
+A = sum(a)
+B = sum(b)
 
 # 6. 輸出兩數之絕對差值
 
