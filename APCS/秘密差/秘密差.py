@@ -10,20 +10,14 @@ num = list(num_input)
 
 num = list(map(int, num))
 
-# 4. 數字位數之奇偶判斷並分別將奇數位數放入 a 偶數位數放入 b
+# 4. 使用 loop 掃過 num list 於相鄰數字進行變號運算並加總
 
-if len(num) % 2 == 0 :
-    a = num[1::2]
-    b = num[::2]
-else :
-    a = num[::2]
-    b = num[1::2]
+sign = 1
+total = 0
+for digit in num:
+  total += sign * digit
+  sign = -sign
 
-# 5. 計算奇數位數和 A 與 偶數位數和 B
+# 5. 輸出運算後之絕對差值
 
-A = sum(a)
-B = sum(b)
-
-# 6. 輸出兩數之絕對差值
-
-print(abs(A-B))
+print(abs(total))
