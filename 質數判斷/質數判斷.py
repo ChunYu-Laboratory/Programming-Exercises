@@ -1,4 +1,4 @@
-print('<< 質數判斷程式 >>','\n')
+print('<< 質數判斷程式 >>',end='\n\n')
 while True:
     n = input('請輸入大於 1 之正整數：')
     if n.isdigit():
@@ -6,11 +6,9 @@ while True:
         if n > 1:
             break
         else:
-            print('輸入格式錯誤')
-            print()
+            print('輸入格式錯誤',end='\n\n')
     else:
-        print('輸入格式錯誤')
-        print()
+        print('輸入格式錯誤',end='\n\n')
 print()
 factor = [[1,n]]
 import math
