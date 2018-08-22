@@ -18,7 +18,7 @@ for x in range(2, math.ceil(n**0.5)+1):
 if factor == [[1,n]]:
     print(n, 'is a prime number')
 else:
-    print(n,'with the following positive factors',end='\n\n')
+    print(n,'with the following positive factors：',end='\n\n')
     print(factor)
 print()
 print('-----Finished-----')
