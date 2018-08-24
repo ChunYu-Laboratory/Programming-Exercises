@@ -17,6 +17,7 @@ def range_input():
         else:
             print('中止值必須大於或等於起始值',end='\n\n')
     return r1,r2
+
 def int_input():
     while True:
         while True:
@@ -34,6 +35,19 @@ def int_input():
         else:
             print('數字必須介於範圍之間',end='\n\n')
     return i
+
+def check(i,count):
+    while i != x:
+        print('作答次數：',count,sep='')
+        if i > x:
+            print('太大了',end='\n\n')
+            i = int_input()
+        elif i < x:
+            print('太小了',end='\n\n')
+            i = int_input()
+        count += 1
+    return count
+
 print('<< 猜數字遊戲 >>',end='\n\n')
 r1,r2 = range_input()
 from random import randint
@@ -42,14 +56,6 @@ print(end='\n\n')
 count = 0
 i = int_input()
 count = 1
-while i != x:
-    print('作答次數：',count,sep='')
-    if i > x:
-        print('太大了',end='\n\n')
-        i = int_input()
-    elif i < x:
-        print('太小了',end='\n\n')
-        i = int_input()
-    count += 1
+count = check(i,count)
 print('作答次數：',count,sep='')
 print('答對了')
