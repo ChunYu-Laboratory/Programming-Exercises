@@ -25,9 +25,9 @@ def factorization():
         print(factor)
 
 print('<< 質數判斷程式 >>',end='\n\n')
-import time
 n = n_input()
 print()
+import time
 start = time.clock()
 factorization()
 end = time.clock()
