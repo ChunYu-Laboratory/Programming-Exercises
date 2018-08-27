@@ -1,5 +1,4 @@
 prime_list = []
-
 for n in range(2,10000000):
     status = True
     for x in range(2,n+1):
