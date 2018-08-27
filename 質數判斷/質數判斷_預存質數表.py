@@ -28,11 +28,23 @@ def check():
         print(n,'is a prime number')
 
 def factorization():
+    status = True
     for x in prime_list:
+        if x*x > n:
+            break
         if n % x == 0:
             print(n,'not a prime number')
+            status = False
             break
-    else:
+    if status:
+        for x in range(prime_list[-1]+1, n+1):
+            if x*x > n:
+                break
+            if n % x == 0:
+                print(n,'not a prime number')
+                status = False
+                break
+    if status:
         print(n,'is a prime number')
 
 print('<< 質數判斷程式 >>',end='\n\n')
