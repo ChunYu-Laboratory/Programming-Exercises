@@ -1,14 +1,6 @@
-prime_list = []
-for n in range(2,10000000):
-    status = True
-    for x in range(2,n+1):
-        if x*x > n:
-            break
-        if n % x == 0:
-            status = False
-            break
-    if status:
-        prime_list.append(n)
+f = open('prime_list.json')
+import json
+prime_list = json.loads(f.read())
 
 def n_input():
     while True:
