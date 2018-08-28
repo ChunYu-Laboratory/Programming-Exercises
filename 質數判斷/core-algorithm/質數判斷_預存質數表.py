@@ -13,6 +13,8 @@ for n in range(2,10000000):
 def check():
     if n in prime_list:
         print(n,'is a prime number')
+    else:
+        print(n,'not a prime number')
 
 def factorization():
     status = True
