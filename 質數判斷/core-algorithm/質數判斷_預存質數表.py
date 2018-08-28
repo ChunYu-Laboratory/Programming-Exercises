@@ -1,5 +1,5 @@
 prime_list = []
-for n in range(2,10000000):
+for n in range(2,100000000):
     status = True
     for x in range(2,n+1):
         if x*x > n:

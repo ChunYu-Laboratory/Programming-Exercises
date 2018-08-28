@@ -46,7 +46,7 @@ n = n_input()
 print()
 import time
 start = time.clock()
-if n <= 10000000:
+if n <= 100000000:
     check()
 else:
     factorization()
