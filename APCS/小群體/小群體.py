@@ -2,7 +2,7 @@
 
 N = int(input())
 
-# 2. 依序輸入相應 Index 的 好友編號 並切割輸入字串分隔之空白成 list
+# 2. 依序輸入相應 Index 的 好友編號，並切割輸入字串分隔之空白成 list，及轉換 list 中元素之型別從 str 至 int
 
 friend = list(map(int,input().split(' ')))
 
