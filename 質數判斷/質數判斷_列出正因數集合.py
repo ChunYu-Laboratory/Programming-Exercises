@@ -27,10 +27,12 @@ def factorization():
 print('<< 質數判斷程式 >>',end='\n\n')
 n = n_input()
 print()
+
 import time
 start = time.clock()
 factorization()
 end = time.clock()
+
 print()
 print('-----Finished-----')
 

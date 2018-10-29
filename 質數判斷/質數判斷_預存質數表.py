@@ -1,6 +1,6 @@
-f = open('prime_list.json')
-import json
-prime_list = json.loads(f.read())
+with open('prime_list.json') as file:
+    import json
+    prime_list = json.loads(file.read())
 
 def n_input():
     while True:
@@ -44,6 +44,7 @@ def factorization():
 print('<< 質數判斷程式 >>',end='\n\n')
 n = n_input()
 print()
+
 import time
 start = time.clock()
 if n <= 100000000:
