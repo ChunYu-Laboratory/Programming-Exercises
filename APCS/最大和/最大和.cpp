@@ -5,13 +5,8 @@ using namespace std;
 
 int main()
 {
-    int NM[2];
-    for(int i = 0; i < 2; i++)
-    {
-        cin >> NM[i];
-    }
-
-    int N = NM[0], M = NM[1];
+    int N, M;
+    cin >> N >> M;
 
     int cluster[N][M];
     for(int i = 0; i < N; i++)
@@ -70,6 +65,6 @@ int main()
         }
     }
 
-    cout << endl;
+    cout << '\n' << endl;
     system("pause");
 }
