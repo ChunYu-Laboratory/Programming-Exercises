@@ -1,2 +1,1 @@
-# Questions
-### My Code for Programming Exercises
+# My Code for Programming Exercises
